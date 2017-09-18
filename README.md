@@ -1,7 +1,7 @@
 ### Entertainment-Logging-and-Tracking-system
 
-##Similar Websites
+## Similar Websites
 www.goodreads.com
 
-##Learning Resources
+## Learning Resources
 www.freecodecamp.org
