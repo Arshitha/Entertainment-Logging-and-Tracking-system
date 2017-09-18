@@ -6,6 +6,5 @@ www.goodreads.com
 ## Learning Resources
 www.freecodecamp.org
 
-
-
-Test
+What is Full Stack Development?
+https://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/
