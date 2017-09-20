@@ -5,6 +5,7 @@ www.goodreads.com
 
 ## Learning Resources
 www.freecodecamp.org
+
 https://tutorial.djangogirls.org/en/
 
 What is Full Stack Development?
