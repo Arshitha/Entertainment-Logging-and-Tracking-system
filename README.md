@@ -21,3 +21,6 @@ https://www.youtube.com/watch?v=AYHE2m651dY&t=523s
 https://www.youtube.com/watch?v=9hDKfBKuXjI&t=659s
 
 https://www.youtube.com/watch?v=SgEFNRf67Cw
+
+ movie dataset
+ https://www.kaggle.com/tmdb/tmdb-movie-metadata
