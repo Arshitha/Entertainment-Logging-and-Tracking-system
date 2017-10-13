@@ -25,3 +25,5 @@ https://www.youtube.com/watch?v=SgEFNRf67Cw
  movie dataset
  
  https://www.kaggle.com/tmdb/tmdb-movie-metadata
+ 
+ https://www.kaggle.com/orgesleka/imdbmovies
