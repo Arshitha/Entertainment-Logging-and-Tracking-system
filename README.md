@@ -27,3 +27,8 @@ https://www.youtube.com/watch?v=SgEFNRf67Cw
  https://www.kaggle.com/tmdb/tmdb-movie-metadata
  
  https://www.kaggle.com/orgesleka/imdbmovies
+ 
+ 
+ Sprint2 presentation slides
+ 
+ https://docs.google.com/presentation/d/1ZxpwcXN8lQZ1ZGVUNVJdJWQQiw2xU5a7UEK-6r0vKbY/edit#slide=id.p
