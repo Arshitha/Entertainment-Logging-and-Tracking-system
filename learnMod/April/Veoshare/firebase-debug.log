@@ -1,0 +1,28 @@
+[debug] [2017-11-07T02:42:27.454Z] ----------------------------------------------------------------------
+[debug] [2017-11-07T02:42:27.458Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-11-07T02:42:27.459Z] CLI Version:   3.13.1
+[debug] [2017-11-07T02:42:27.459Z] Platform:      darwin
+[debug] [2017-11-07T02:42:27.459Z] Node Version:  v8.6.0
+[debug] [2017-11-07T02:42:27.459Z] Time:          Mon Nov 06 2017 21:42:27 GMT-0500 (EST)
+[debug] [2017-11-07T02:42:27.459Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-07T02:42:27.480Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-07T02:42:27.480Z] > authorizing via signed-in user
+[debug] [2017-11-07T02:42:27.484Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/psychic-cycling-185003  
+ Mon Nov 06 2017 21:42:27 GMT-0500 (EST)
+[debug] [2017-11-07T02:42:27.873Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-07T02:42:27.874Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/psychic-cycling-185003/tokens  
+ Mon Nov 06 2017 21:42:27 GMT-0500 (EST)
+[debug] [2017-11-07T02:42:28.251Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/yt.hao/Desktop/BU/Study/EC601/Entertainment-Tracking-system-master/VeoShare'...
+[info] 
+[debug] [2017-11-07T02:42:28.256Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/psychic-cycling-185003  
+ Mon Nov 06 2017 21:42:28 GMT-0500 (EST)
+[debug] [2017-11-07T02:42:28.498Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-07T02:42:28.499Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/437139562140/clients/_:getWebAppConfig  
+ Mon Nov 06 2017 21:42:28 GMT-0500 (EST)
+[debug] [2017-11-07T02:42:28.907Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
