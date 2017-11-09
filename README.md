@@ -3,7 +3,8 @@
 ## Coding Review Current Path:
 
 Front End: 
-https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/Veoshare
+
+      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/Veoshare
 
 Website:
 
@@ -15,14 +16,18 @@ Website:
     (User Login/Logout/Add comment/create movie info/search movie)
 
 Back end:
-https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/Iris
+
+      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/Iris
 
 Function:
-1. Calendar:
-https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
 
-Readme:
-https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
+      1. Calendar:
+      
+      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
+
+      Readme:
+      
+      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
 
 ## Similar Websites
 www.goodreads.com
@@ -55,7 +60,7 @@ https://www.youtube.com/watch?v=SgEFNRf67Cw
  
  Sprint2 presentation slides
  
- https://docs.google.com/presentation/d/1ZxpwcXN8lQZ1ZGVUNVJdJWQQiw2xU5a7UEK-6r0vKbY/edit#slide=id.p
+      https://docs.google.com/presentation/d/1ZxpwcXN8lQZ1ZGVUNVJdJWQQiw2xU5a7UEK-6r0vKbY/edit#slide=id.p
  
  
  firebase functions tutorial:
