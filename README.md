@@ -1,4 +1,21 @@
-### Entertainment-Logging-and-Tracking-system
+# Entertainment-Logging-and-Tracking-system
+
+## Coding Review Current Path:
+
+Front End: 
+https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/Veoshare
+Website:
+https://psychic-cycling-185003.firebaseapp.com/
+(Login available)
+
+Back end:
+https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/Iris
+
+Function:
+1. Calendar:
+https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
+Readme:
+https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/fullcalendar-test
 
 ## Similar Websites
 www.goodreads.com
@@ -32,3 +49,7 @@ https://www.youtube.com/watch?v=SgEFNRf67Cw
  Sprint2 presentation slides
  
  https://docs.google.com/presentation/d/1ZxpwcXN8lQZ1ZGVUNVJdJWQQiw2xU5a7UEK-6r0vKbY/edit#slide=id.p
+ 
+ 
+ firebase functions tutorial:
+ https://github.com/firebase/functions-samples
