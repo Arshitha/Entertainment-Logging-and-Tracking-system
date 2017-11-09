@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta name="google-signin-client_id" content="437139562140-kthfs2l7fn2oiehcsbp0542dl1ta4gdf.apps.googleusercontent.com">
+<!--   <meta name="google-signin-client_id" content="437139562140-kthfs2l7fn2oiehcsbp0542dl1ta4gdf.apps.googleusercontent.com"> -->
   <meta charset="utf-8">
   <title>Login - Flexor Bootstrap Theme</title>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -87,7 +87,7 @@
             <div class="panel-body">
               <form accept-charset="UTF-8" role="form">
                 <fieldset>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <div class="input-group input-group-lg">
                       <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
                       <input id="txtEmail" type="email" class="form-control" placeholder="Email">
@@ -97,11 +97,17 @@
                     <div class="input-group input-group-lg">
                       <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
                       <input id="txtPassword" type="password" class="form-control" placeholder="Password">
-                    </div>
+                    </div> -->
 
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
+
+                  <div class="container" id="login">
+                    <button type="button" class="btn btn-primary" onclick="signIn();"><i class="fa fa-google-plus"></i>Sign-In with Google</button>
                   </div>
+                    
+                   <!--  <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+              <!--     </div>
                   <div class="checkbox">
                     <label>
                         <input name="remember" type="checkbox" value="Remember Me">
@@ -113,8 +119,33 @@
                   <button id="btnLogout" class="btn btn-action hide"> Log out </button>
                 </fieldset>
               </form>
-              <p class="m-b-0 m-t">Not signed up? <a href="register.html">Sign up here</a>.</p>
-              <a href="index.html" onclick="signOut();">Sign out</a>
+              <p class="m-b-0 m-t">Not signed up? <a href="register.html">Sign up here</a>.</p> -->
+             <!--  <a href="index.html" onclick="signOut();">Sign out</a> -->
+              
+             <div class="container" id="welcome">
+               <div class="row">
+                 <div class="col-lg-200">
+                   <h2 id="welcomeText"></h2>
+                   <img src="WechatIMG106.jpeg" height="100" width="100">
+                 </div>
+                 <div class="col-lg-6">
+                   <h3>Your favorite movie type: </h3><div class="dropdown favoriteMovie">
+                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Movie Type <span class="dropdown-menu"></span></button>
+                     <ul class="dropdown-menu">
+                       <li><a href="#">Comedy</li>
+                       <li><a href="#">Romance</li>
+                       <li><a href="#">Horror</li>                                               
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+
+
+
+
+
               <div class="credits">
             <!--
               All the links in the footer should remain intact.
@@ -167,7 +198,7 @@
   <script src= "app.js"></script>
 
     <!-- Google sign in Api -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+<!--   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script >
     function onSignIn(googleUser) {
       var profile = googleUser.getBasicProfile();
@@ -176,17 +207,17 @@
       console.log('Image URL: ' + profile.getImageUrl());
       console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
-  </script>
+  </script> -->
 
   <!-- Google sign out -->
-<script>
+<!-- <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
   }
-</script>
+</script> -->
 
 </body>
 
