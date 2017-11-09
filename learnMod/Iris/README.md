@@ -10,4 +10,4 @@
 
 Make comments on different movies. Search movies through search engine.
 
-![Backend](https://github.com/Arshitha/Entertainment-Tracking-system/learnMod/Iris/1.png )
+
