@@ -1,6 +1,8 @@
 # Calendar Function
 ## Schedule watch list
 Users can create events on special date.
+
+Save the playlist data to database
 ## Update latest movie and TV show
 A schedule of the newest releases
 ## Notification
