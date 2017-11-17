@@ -1,5 +1,9 @@
 # Entertainment-Logging-and-Tracking-system
 
+## Description
+
+## Repository Structure
+
 ## Coding Review Current Path:
 
 Front End: 
