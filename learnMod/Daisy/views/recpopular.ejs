@@ -1,0 +1,13 @@
+<% include ./partials/header %> 
+
+<h1>Recommendations by popular</h1>
+
+<% populars["results"].forEach(function(popular){%>
+  <li><%= popular["title"] %> </li>
+  <li><%= popular["release_date"] %> </li>
+   <img src="<%= popular["poster_path"] %>">
+   <li><%= popular["overview"] %> </li>
+ 
+<%}) %>
+
+<% include ./partials/footer %>
