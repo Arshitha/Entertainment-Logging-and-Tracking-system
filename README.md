@@ -1,12 +1,13 @@
 # Entertainment-Logging-and-Tracking-system
 
 ## Description
+One of the major sources of entertainment are TV shows and movies. Streaming media companies such as Netflix, Hulu, Amazon Prime are ever more popular today than before. However, it's gets difficult to keep track of the series or movies that we watch since they are all scattered on different apps. For instance, if I were to start watching Game of Thrones on Prime via HBO and Stranger Things on Netflix on the same day and follow them both it can get particularly annoying to keep track of both series. 
 
-## Repository Structure
+VeoShare is a web application that'll keep track of the TV series/movie that the user is watching and on which application they are watching, their progress, watch history, reviews and ratings. Additionally, they have access to their friends' ratings and reviews and an option to start discussion forums. They can also plan their watch schedule using the calendar functionality which would be automatically updated for new releases and air dates of Trending TV shows. 
 
-## Coding Review Current Path:
-
+## Repository Structure:
 Front End: 
+      
 
       https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/Veoshare
 
