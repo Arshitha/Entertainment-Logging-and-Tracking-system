@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+
+</section>
+
+<section class="engine"><a href="https://mobirise.co/a">web site builder</a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="form1-1u" data-rv-view="401" style="background-image: url(assets/images/bg3.jpg);">
+    
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">Add to Playlist</h2>
+                        </div>
+                        
+                        <form action="/addmovie" method="POST">
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" required="" value="<%= name%>" placeholder="Title*">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="image" value="<%= img%>" placeholder="Image URL">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="overview" rows="7" placeholder="Overview"></textarea>
+                            </div>
+                            <div class="mbr-buttons mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">SUBMIT</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<form action="/addmovie" method="POST">-->
+<!--    <li><input type="text" name="name" value="<%= name%>"></li>-->
+<!--    <li><input type="text" name="image"  value="<%= img%>"></li>-->
+<!--    <li><input type="text" name="link" placeholder="link"></li>-->
+<!--    <input type="submit" >-->
+<!--    </form>-->
