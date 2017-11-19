@@ -1,74 +1,32 @@
-<% include ./partials/header %> 
+<% include ./partials/header %>
 
- 
-<!-- ======== @Region: body ======== -->
-
-<body class="fullscreen-centered page-register">
-  <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
-  <div id="background-wrapper" class="benches" data-stellar-background-ratio="0.8">
-
-    <!-- ======== @Region: #content ======== -->
-    <div id="content">
-      <div class="header">
-        <div class="header-inner">
-          <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-          <a class="navbar-brand center-block" href="/" title="Home">
-            <h1 class="hidden">
-                <img src="img/logo.png" alt="Flexor Logo">
-                VeoShare
-              </h1>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                  Sign Up
-                </h3>
-            </div>
-            <div class="panel-body">
-<!--                <form action="/register" method="post">-->
-<!--    <input type="text" name="username" placeholder="username">-->
-<!--    <input type="password" name="password" placeholder="password">-->
-<!--    <button>Sign Up</button>-->
-<!--</form>-->
-              <form action="/register" method="post">
-                <fieldset>
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
-                      <input type="text" name="username" class="form-control" placeholder="Username">
+<section class="engine"><a href="https://mobirise.co/o">bootstrap button</a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="form1-1f" data-rv-view="3500" style="background-image: url(assets/images/mbr-1-1620x1080.jpg);">
+    
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">Sign Up</h2>
+                        </div>
+                        
+                        <form action="/register" method="POST">
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" required="" placeholder="Name*">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" required="" placeholder="Password*">
+                            </div>
+                            <div class="mbr-buttons mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">Sign Up</button></div>
+                        </form>
                     </div>
-                  </div>
-                
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                      <input type="password" name="password" class="form-control" placeholder="Password">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                  <div class="checkbox">
-                    <label>
-                        <input name="remember" type="checkbox" value="Terms">
-                        I agree to the <a href="#">terms and conditions</a>.
-                      </label>
-                  </div>
                 </div>
-                <div class="form-group">
-                  <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Me Up">
-                </div>
-                </fieldset>
-              </form>
-              <p class="m-b-0 m-t">Already signed up? <a href="/login">Login here</a>.</p>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- /row -->
     </div>
-  </div>
-  <% include ./partials/footer %> 
+</section>
+
+
+   <% include ./partials/footer %>

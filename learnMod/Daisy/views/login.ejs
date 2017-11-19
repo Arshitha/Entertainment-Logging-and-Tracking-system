@@ -1,71 +1,48 @@
-<% include ./partials/header %> 
+<% include ./partials/header %>
 
-<!-- ======== @Region: body ======== -->
+<!-- <section class="engine"><a href="https://mobirise.co/o">bootstrap button</a></section> -->
 
-<body class="fullscreen-centered page-login">
-  <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
-  <div id="background-wrapper" class="benches" data-stellar-background-ratio="0.8">
-
-    <!-- ======== @Region: #content ======== -->
-    <div id="content">
-      <div class="header">
-        <div class="header-inner">
-          <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-          <a class="navbar-brand center-block" href="/" title="Home">
-            <h1 class="hidden">
-                <img src="img/logo.png" alt="Flexor Logo">
-               VeoShare
-              </h1>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                  Login
-                </h3>
-            </div>
-            <div class="panel-body">
-             <form action="/login" method="POST">
-                <fieldset>
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
-<!--                      <form action="/login" method="POST">-->
-<!--    <input type="text" name="username" placeholder="username">-->
-<!--    <input type="password" name="password" placeholder="password">-->
-<!--    <input type="submit" value="Login!">-->
-<!--</form>-->
-                     
-                      <input type="text" name="username" class="form-control" placeholder="Email">
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="form1-1f" data-rv-view="3500" style="background-image: url(/assets/images/mbr-1-1620x1080.jpg);">
+    
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">Login</h2>
+                        </div>
+                        
+                        <form action="/login" method="POST">
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" required="" placeholder="Name*">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" required="" placeholder="Password*">
+                            </div>
+                            
+                            <div class="mbr-buttons mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">Login</button></div>
+                        </form>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                      <input type="password" name ="password" class="form-control" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                        <input name="remember" type="checkbox" value="Remember Me">
-                        Remember Me
-                      </label>
-                  </div>
-                  <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
-                </fieldset>
-              </form>
-              <p class="m-b-0 m-t">Not signed up? <a href="/register">Sign up here</a>.</p>
-             
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- /row -->
     </div>
-  </div>
+</section>
+
+
+  <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+  <!--[if lte IE 9]>
+    <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <![endif]-->
+  <script src="/assets/jarallax/jarallax.js"></script>
+  <script src="/assets/mobirise/js/script.js"></script>
+  <script src="/assets/dropdown-menu/script.js"></script>
+  <script src="/assets/formoid/formoid.min.js"></script>
   
-  <% include ./partials/footer %> 
   
+</body>
+</html>

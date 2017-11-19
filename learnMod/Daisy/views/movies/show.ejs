@@ -1,5 +1,6 @@
 <% include ../partials/header %>
-<div class="container">
+
+<div class="container" style="padding-top: 120px;">
     <div class="row">
         <div class="col-md-3">
             <p class="lead">VeoShare</p>
@@ -11,11 +12,14 @@
         </div>
         <div class="col-md-9">
             <div class="thumbnail">
-                <img class="img-responsive" src="<%= movie.image %>">
+                <img class="img-responsive" src="<%= movie.image %>"  >
                 <div class="caption-full">
                     <h4 class="pull-right">$9.00/night</h4>
                     <h4><a><%=movie.name%></a></h4>
                     <!--<p><%= movie.link %></p>-->
+                    <p>
+                        <em>Submitted By<a href="/users/<%= movie.author.id %>"><%= movie.author.username %></a></em>
+                    </p>
                 </div>
             </div>
             <div class="well">
@@ -26,7 +30,7 @@
                 <% movie.comments.forEach(function(comment){ %>
                     <div class="row">
                         <div class="col-md-12">
-                            <strong><%= comment.author %></strong>
+                            <strong><%= comment.author.username %></strong>
                             <span class="pull-right">10 days ago</span>
                             <p>
                                 <%= comment.text %> 
