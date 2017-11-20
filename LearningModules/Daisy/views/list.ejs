@@ -1,0 +1,17 @@
+<% include ./partials/header  %>
+
+<h1>Index page</h1>
+
+<% lists.forEach(function(list){%>
+    <div class="ui relaxed divided list"> 
+  <div class="item">
+     <div class="content"> 
+       <a class="header"><%=list.title %></a>
+       
+    </div> 
+   </div>
+ </div>
+ <% }) %>
+ 
+ 
+<% include ./partials/footer  %>
