@@ -1,0 +1,50 @@
+  <% include ../partials/footer %> 
+  
+  
+  <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" id="form1-b" data-rv-view="31" style="background-image: url(assets/images/mbr-1-1620x1080.jpg);">
+    
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">Add New Movie</h2>
+                        </div>
+                          <form action="/movies" method="POST">
+            
+                            <div class="input-group input-group-lg">
+                     
+               <input type="text" name="name" class="form-control" placeholder="name">
+                    </div>
+                  </div>
+                 
+                    <div class="input-group input-group-lg">
+                      
+                      <input type="text" name ="image" class="form-control" placeholder="image url">
+                    </div>
+                  </div>
+                 
+                    <div class="input-group input-group-lg">
+                     
+                      <input type="text" name ="link" class="form-control" placeholder="link url">
+                    </div>
+                  </div>
+                
+                  <input class="btn btn-lg btn-primary btn-block" type="submit" >
+              
+              </form>
+              <a href="/movies">Go Back</a>
+             
+ </div>
+  </div>
+   </div>
+    </div>
+     </div>
+     </section>
+ 
+
+  <% include ../partials/footer %> 
+  
+  
+ 
