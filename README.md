@@ -4,22 +4,28 @@
 
 Front End: 
 
-      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/April/Veoshare
+    There are 2 versions of the Front End for now: 
+    
+    1. FrontEnd_version1 folder contains the front end built initially
+    
+    2. FrontEnd_version2 folder contains the front end being used currently
 
-Website:
+Temporarily Deployed Website:
+
+	  VeoShare is the folder that contains the deployed application code.
 
       https://psychic-cycling-185003.firebaseapp.com/
       (Login available)
 
-     https://entertainweb-irislpx.c9users.io/
+      https://entertainweb-irislpx.c9users.io/
 
-    (User Login/Logout/Add comment/create movie info/search movie)
+      (User Login/Logout/Add comment/create movie info/search movie)
 
 Back end:
 
-      https://github.com/Arshitha/Entertainment-Tracking-system/tree/master/learnMod/Iris
+      The BackEnd folder contains all the Back End code.
 
-Function:
+Implemented Features:
 
       1. Calendar:
       
