@@ -11,8 +11,7 @@ router.get("/",function(req,res){
         if(err){
             console.log("Error");}
         else{
-            recs.Title=[];
-            recs.Poster=[];
+            
             movies.forEach(function(movie){
             var id;
             var url1="https://api.themoviedb.org/3/search/movie?api_key=e09462e1b8b7fb2720e3f86f91480dc9&language=en-US&query=";
@@ -37,7 +36,7 @@ router.get("/",function(req,res){
         })
         }
     })
-     console.log(recs.Title.length);
+    
      res.render("rec/rec.ejs",{recs:recs});
 });
 
