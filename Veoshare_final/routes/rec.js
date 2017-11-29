@@ -35,6 +35,8 @@ router.get("/",function(req,res){
             })
         })
         }
+        recs.Title=[];
+        recs.Poster=[];
     })
     
      res.render("rec/rec.ejs",{recs:recs});
