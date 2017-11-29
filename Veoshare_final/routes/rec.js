@@ -7,7 +7,7 @@ var request=require("request");
 
 var recs={Title:[],Poster:[]};
 router.get("/",function(req,res){
-    Movie.find({},function(err,movies){
+    Movie.find({author:{id:req.user._id,username:req.user.username}},function(err,movies){
         if(err){
             console.log("Error");}
         else{
