@@ -1,8 +1,10 @@
 <h1>Results Page</h1>
 
 <% data["Search"].forEach(function(movie){ %>
-    <li>
-        <%= movie.Title %> - <%= movie.imdbID%>
-        <%= dataOne["results"] %>
-    </li>
+    <div>
+        <a href = "/info?movieID=<%=movie.imdbID%>&movieTitle=<%=movie.Title%>&moviePlot =<%=movie.Plot%>&movieCast=<%=movie.Actors%>"><%= movie.Title %></strong></a>
+    </div>
 <% }); %>
+
+
+

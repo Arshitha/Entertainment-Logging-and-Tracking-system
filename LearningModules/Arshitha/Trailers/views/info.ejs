@@ -1,0 +1,33 @@
+<h1><%= query.Title %></h1>
+<h2>Released: <%= query.Released %></h2>
+
+<div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=data["results"][0]["key"] %>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+    <h3>Plot:</h3>
+    <p>
+        <%= query.Plot %>
+        
+    </p>
+    
+    <h3>Cast:</h3>
+    <p>
+        <%= query.Actors %>
+        
+    </p>
+    
+    <h3>Ratings: </h3>
+    <p>
+        <% query["Ratings"].forEach(function(source){ %>
+            <li>
+                <%= source.Source %> : <%= source.Value %>
+            </li>
+        <% }) %>
+    </p>
+    
+</div>
+
+
+
+    
