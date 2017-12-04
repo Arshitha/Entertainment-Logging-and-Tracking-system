@@ -47,12 +47,8 @@ app.get("/info",function(req, res){
         
     } );
     
-    //console.log(addData)
-    //var moviePlot = req.query.moviePlot;
-    //console.log(req.query)
     var url = "http://api.themoviedb.org/3/movie/" + query + "/videos?api_key=fc2ec17d17b2ffeee2d9053a7ac02965&append_to_response=videos";
-    //console.log(url)
-    
+   
     request(url, function(error, response, body){
         if(!error && response.statusCode == 200){
             
