@@ -5,11 +5,13 @@ var request = require("request");
 
 app.set("view engine", "ejs");
 
+//renders the search form 
 app.get("/", function(req, res){
     res.render("search");
     
 });
 
+//responds to request sent from search.ejs by rendering the results.ejs page
 app.get("/results", function(req, res){
     var query = req.query.keyword;
     console.log(query)
@@ -29,6 +31,7 @@ app.get("/results", function(req, res){
     })
 });
 
+//Displays information about each movie from the search result depending on the users selection
 app.get("/info",function(req, res){
     var query = req.query.movieID;
     var addData
