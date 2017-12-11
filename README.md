@@ -11,6 +11,11 @@ https://enigmatic-ravine-11310.herokuapp.com/
 ## Test page
 https://www.webpagetest.org/result/171211_VQ_790852747dc216667767a4605be06c25/
 
+## Poster
+
+<img src="https://github.com/Arshitha/Entertainment-Tracking-system/blob/master/Poster0.jpg">
+
+
 ## Repository Structure:
 ### Front End: 
     
