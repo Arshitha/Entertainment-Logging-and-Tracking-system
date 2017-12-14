@@ -3,11 +3,16 @@ var router = express.Router();
 var Movie = require("../models/movies");
 
 router.get("/",isLoggedIn, function(req, res){
+    var name;
+    var img;
    for(var key in req.query){
-       var name=key.split(";")[0];
-       var img=key.split(";")[1];
+        name=key.split(";")[0];
+        img=key.split(";")[1];
+       
        
    }
+    console.log(name);
+   console.log(img);
    res.render("movies/addmovie.ejs",{name:name,img:img}); 
 });
 router.post("/", function(req, res){

@@ -3,17 +3,14 @@ var router = express.Router();
 var Movie = require("../models/movies");
 
 
-
-
 //INDEX show all movies
 router.get("/", function(req, res){
     // Get all campgrounds from DB
-   
-    Movie.find({author:{id:req.user._id,username:req.user.username}}, function(err, allMovies){
+   Movie.find({}, function(err, allMovies){
        if(err){
            console.log(err);
        } else {
-          res.render("movies/index.ejs",{movies:allMovies});
+          res.render("movies/index",{movies:allMovies});
        }
     });
 });
@@ -64,6 +61,20 @@ router.get("/:id", function(req, res){
         }
     });
 })
+
+
+//Destroy route (delete)
+router.delete("/:id",function(req,res){
+    Movie.findByIdAndRemove(req.params.id, function(err){
+        if(err){
+            res.redirect("/movies");
+        }else {
+            res.redirect("/movies");
+        }
+    });
+});
+
+
 
 function isLoggedIn(req, res, next){
     if(req.isAuthenticated()){
