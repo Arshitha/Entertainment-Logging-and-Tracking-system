@@ -1,4 +1,21 @@
 <% include ../partials/header %>
+<Script> 
+function reurl(){ 
+url = location.href; //把当前页面的地址赋给变量 url 
+var times = url.split("?"); //分切变量 url 分隔符号为 "?" 
+if(times[times.length-1] != 1){ //如果?后的值不等于1表示没有刷新 
+url += "?1"; //把变量 url 的值加入 ?1 
+self.location.replace(url); //刷新页面 
+} 
+} 
+onload=reurl 
+</script> 
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(5000);
+</script> 
 <style>
 input[type="submit"]{
     background-color: #555;
@@ -8,43 +25,46 @@ input[type="submit"]{
 
 }
 </style>
+
+
 <body background="/assets/images/mbr-1624x1080.jpg" >
 <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
-<section class="engine"><a href=""></a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="features1-o" data-rv-view="206">
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
-    
-    <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
+<section class="engine"><a href=""></a></section>
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="features1-o" data-rv-view="206">
+     <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
         <div class="mbr-section__row row">
-          <% populars["results"].forEach(function(movie) { %>
-         <form action="/addmovie" type="GET" name="<%=movie["title"] %>">
+         <% for(var i=0;i<populars.title.length;i++) { %>
+         <form action="/addmovie" type="GET" name="<%=populars.title[i] %>">
             <div class="mbr-section__col col-xs-12 col-md-6 col-sm-6">
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img src=" https://image.tmdb.org/t/p/w500/<%= movie["poster_path"] %> " hight= "350" width="280" class="mbr-figure__img"></figure>
+                  <a href = "/info?movieID=<%=populars.id[i]%>&movieTitle=<%=populars.title[i]%>">
+                    <figure class="mbr-figure"><img src="<%= populars.poster[i] %>" hight= "350" width="280" class="mbr-figure__img"></figure>
+                  </a>
                 </div>
                 <div class="mbr-section__container mbr-section__container--middle">
                     <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                        <h3 class="mbr-header__text"><%= movie["title"] %></h3>
+                        <a href = "/info?movieID=<%=populars.id[i]%>&movieTitle=<%=populars.title[i]%>">
+                          <h3 class="mbr-header__text"><%= populars.title[i] %></h3>
+                        </a>
                     </div>
-                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                        <h4 class="mbr-header__text">Vote:<%= movie["vote_average"] %></h4>
-                    </div>
-                </div>
-                <div class="mbr-section__container mbr-section__container--middle">
-                    <div class="mbr-article mbr-article--wysiwyg">
-                        <p><%=movie["overview"]%><br><br></p>
-                    </div>
-                </div>
-            <div class="mbr-section__container mbr-section__container--last mbr-section__container--center" style="padding-bottom: 50px;">
-              <input type="submit"  name="<%=movie["title"]%>;https://image.tmdb.org/t/p/w500/<%=movie["poster_path"] %>%>"  value="Add to playlist"> 
-            </div> 
-            
-            
-            
-            </div>
-            </form>
-            <% }) %>
-        </div>
+      
+                    <div class="mbr-section__container mbr-section__container--last mbr-section__container--center" style="padding-bottom: 50px;">
+                      <br><br><input type="submit"  name="<%=populars.title[i]%>;<%=populars.poster[i]%>"  value="Add to playlist"> 
+                    </div> 
+          
+             </div>          
+          
+          <!--<form action="/addmovie" type="GET" name="<%=populars.title[i] %>">-->
+          <!--          <a href = "/info?movieID=<%=populars.id[i]%>&movieTitle=<%=populars.title[i]%>"><img src="<%= populars.poster[i] %>"><%= populars.title[i] %></strong></a>-->
+          <!--    <input type="submit"  name="<%=populars.title[i]%>;<%=populars.poster[i] %>"  value="Add to playlist"> -->
+           </div>
+        </form>
+         
+       
+         <% } %>
+         </div>
     </div>
+        
     
 </section>
 

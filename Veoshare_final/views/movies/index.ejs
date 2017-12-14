@@ -6,8 +6,19 @@
 <section class="engine"><a href=""></a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="features1-o" data-rv-view="206" >
 <!--style="background-image: url(/assets/images/mbr-1624x1080.jpg);"-->
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
-    
     <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
+        <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
         <div class="mbr-section__row row">
           <% movies.forEach(function(movie) { %>
           <form >

@@ -3,16 +3,28 @@
 <!-- <section class="engine"><a href="https://mobirise.co/o">bootstrap button</a></section> -->
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="form1-1f" data-rv-view="3500" style="background-image: url(/assets/images/mbr-1-1620x1080.jpg);">
-    
     <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <div class="container">
+        
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
                             <h2 class="mbr-header__text">Login</h2>
                         </div>
-                        
+                       
                         <form action="/login" method="POST">
                             
                             <div class="form-group">

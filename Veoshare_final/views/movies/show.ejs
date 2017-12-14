@@ -1,27 +1,38 @@
 <% include ../partials/header %>
 
 <body background="/assets/images/mbr-1-1620x1080.jpg" >
-<section>
+    <!--<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>-->
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="features1-o" data-rv-view="206" >
+
+<!--<section>-->
+     
 <div class="container" style="padding-top: 120px;">
     <div class="row">
         <div class="col-md-3">
             <p class="lead">VeoShare</p>
             <div class="list-group">
                 <li class="list-group-item active">Overview</li>
-                <li class="list-group-item">Cast</li>
-                <li class="list-group-item">Review</li>
             </div>
         </div>
         <div class="col-md-9">
             <h1><b><%=movie.name%></b></h1>
+            
             <img class="img-responsive" src="<%= movie.image %>" class="centerImage"  >
+            <!--</a>-->
             <!--<div class="thumbnail">-->
                 <div class="mbr-section__container mbr-section__container--middle">
                     <div class="mbr-article mbr-article--wysiwyg">
                         <p><%=movie["overview"]%><br><br></p>
+                         <em>Submitted By  <a href="/users/<%= movie.author.id %>"><%= movie.author.username %></a></em>
                     </div>
                 </div>
-                
+                 <% if(currentUser && movie.author.id.equals(currentUser._id) ){ %>
+        <form action="/movies/<%= movie._id %>?_method=DELETE"  method="POST">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+        <% } %>
+               
+             
                 <div class="caption-full">
                    
                     <!--<h4><a><%=movie.name%></a></h4>-->
@@ -29,27 +40,37 @@
 
                 </div>
             <!--</div>-->
-            <div class="well">
+            <!--<div class="well">-->
                 <div class="text-right">
                     <a class="btn btn-success" href="/movies/<%= movie._id %>/comments/new">Add New Comment</a>
                 </div>
-                <hr>
+               <hr>
+
                 <% movie.comments.forEach(function(comment){ %>
-                    <div class="row">
+                    
                         <div class="col-md-12">
+                            <font color="white">
                             <strong><%= comment.author.username %></strong><br>
-                            <span class="pull-right">10 days ago</span><br>
+                            <span class="pull-right"><%= comment.time%></span><br>
                             <p>
                                 <%= comment.text %> 
                             </p>
-                            <!--<p>-->
-                                <!--<em>Submitted By<a href="/users/<%= movie.author.id %>"><%= movie.author.username %></a></em>-->
-                            <!--    <em>Submitted By<a href="/users/<%= comment.author.username %>"><%= comment.author.username %></a></em>-->
-                            <!--</p>-->
+                            </font>
+                            <hr>
+                          <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+                            <div class="pull-right">
+                             <form class="delete-form" action="/movies/<%=movie._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+                                <button class="btn btn-xs btn-danger">DELETE</button>
+                                <hr>
+                            </form>
+                            </div>
+                         <% } %>
                         </div>
-                    </div>
+                 
+               
                 <% }) %>
-            </div>
+                
+            <!--</div>-->
         </div>
     </div>
 </div>

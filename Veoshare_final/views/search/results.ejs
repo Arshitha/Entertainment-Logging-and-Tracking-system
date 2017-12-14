@@ -19,28 +19,13 @@ input[type="submit"]{
     <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
         <div class="mbr-section__row row">
           <% data["Search"].forEach(function(movie) { %>
-          <form action="/addmovie" type="GET">
-            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img src=" <%= movie["Poster"] %> " hight= "280" width="200" class="mbr-figure__img"></figure>
-                </div>
-                <div class="mbr-section__container mbr-section__container--middle">
-                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                        <h3 class="mbr-header__text"><%= movie["Title"] %></h3>
-                    </div>
-                </div>
-                <div class="mbr-section__container mbr-section__container--middle" >
-                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
-                    <!--<div class="mbr-article mbr-article--wysiwyg"  style="text-align:center">-->
-                        <p ><%=movie["Year"]%></p>
-                    </div>
-                </div>
-                <div class="mbr-section__container mbr-section__container--last mbr-section__container--center" style="padding-bottom: 50px;">
-                    <input type="submit"  name="<%=movie["Title"]%>;<%=movie["Poster"]%>" value="Add to playlist"> 
-                </div> 
+          
+            <div class="mbr-section__col col-xs-12 col-md-6 col-sm-6;">
+                <div class="mbr-section__container mbr-section__container--center mbr-section__container--center">
+                   <b><a href = "/info?movieID=<%=movie.imdbID%>&movieTitle=<%=movie.Title%></a></b>&moviePlot =<%=movie.Plot%>&movieCast=<%=movie.Actors%>"><img src="<%= movie.Poster %>"><br><br><%= movie.Title %></strong></a>
                 
-                <!--<input type="submit"  name="<%=movie["Title"]%>;<%=movie["Poster"]%>"  value="Add to playlist"> -->
-               </form>
+                </div>
+                <br><br><br>
             </div>
             <% }) %>
         </div>

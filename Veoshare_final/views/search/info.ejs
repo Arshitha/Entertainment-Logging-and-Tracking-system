@@ -1,0 +1,52 @@
+<% include ../partials/header %>
+ 
+<style>
+input[type="submit"]{
+    background-color: #555;
+    color: #fff;
+    width: 150px;
+    border-radius: 20px;
+}
+</style>
+
+<body background="/assets/images/mbr-1624x1080.jpg" >
+<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
+
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background mbr-after-navbar" id="features1-o" data-rv-view="206">
+  <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 0px;">
+
+<h1><%= query.Title %></h1>
+<h3>Released: <%= query.Released %></h3>
+
+<div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=data["results"][0]["key"] %>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+    <h3>Plot:</h3>
+    <p>
+        <font size="4" ><%= query.Plot %></font>
+        
+    </p>
+    
+    <h3>Cast:</h3>
+    <p>
+        <font size="4" ><%= query.Actors %></font>
+        
+    </p>
+    
+    <h3>Ratings: </h3>
+    <p>
+         <font size="4" ><% query["Ratings"].forEach(function(source){ %>
+            <li>
+                <%= source.Source %> : <%= source.Value %>
+            </li>
+        <% }) %></font>
+    </p>
+    <form action="/addmovie" type="GET">
+         <input type="submit"  name="<%=query.Title%>;<%=query.Poster%>"  value="Add to playlist"><br><br><br><br> 
+    </form>
+</div>
+</div>
+</section>
+
+ <% include ../partials/footer %>
